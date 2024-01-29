@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -46,6 +47,105 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu">
+        <button type="button" class="mob-menu-close-btn">
+          <svg class="mob-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-icon-menu-close"></use>
+          </svg>
+        </button>
+        <div>
+          <nav class="mob-menu-naviganion">
+            <ul class="mob-menu-nav-list">
+              <li class="mob-menu-nav-item">
+                <a class="mob-menu-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-nav-item">
+                <a class="mob-menu-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-menu-nav-item">
+                <a class="mob-menu-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-menu-address-soc">
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-address-link-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link-mailto"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mob-menu-soc-list">
+            <li class="mob-menu-soc-item">
+              <a
+                class="mob-menu-soc-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="16" height="16" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                class="mob-menu-soc-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="16" height="16" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                class="mob-menu-soc-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="16" height="16" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                class="mob-menu-soc-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="16" height="16" class="mob-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -122,9 +222,11 @@
           <ul class="section-team-list">
             <li class="section-team-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="A man with a beard"
                 width="264"
+                class="section-team-img"
               />
               <div class="team-subtitle-item">
                 <h3 class="section-team-subtitle">Mark Guerrero</h3>
@@ -157,7 +259,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.facebook.com/"
+                      href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -169,7 +271,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.linkedin.com/"
+                      href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -182,7 +284,13 @@
               </div>
             </li>
             <li class="section-team-item">
-              <img src="./images/img2.jpg" alt="A laughing man" width="264" />
+              <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                src="./images/img2.jpg"
+                alt="A laughing man"
+                width="264"
+                class="section-team-img"
+              />
               <div class="team-subtitle-item">
                 <h3 class="section-team-subtitle">Tom Ford</h3>
                 <p class="section-team-text">Frontend Developer</p>
@@ -214,7 +322,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.facebook.com/"
+                      href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -226,7 +334,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.linkedin.com/"
+                      href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -240,9 +348,11 @@
             </li>
             <li class="section-team-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="A woman in a pink sweater"
                 width="264"
+                class="section-team-img"
               />
               <div class="team-subtitle-item">
                 <h3 class="section-team-subtitle">Camila Garcia</h3>
@@ -275,7 +385,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.facebook.com/"
+                      href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -287,7 +397,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.linkedin.com/"
+                      href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -301,9 +411,11 @@
             </li>
             <li class="section-team-item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="A man in a gray T-shirt"
                 width="264"
+                class="section-team-img"
               />
               <div class="team-subtitle-item">
                 <h3 class="section-team-subtitle">Daniel Wilson</h3>
@@ -336,7 +448,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.facebook.com/"
+                      href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -348,7 +460,7 @@
                   <li class="section-team-soc-item">
                     <a
                       class="section-team-soc-link"
-                      href="https://wwww.linkedin.com/"
+                      href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -371,11 +483,34 @@
           <ul class="section-portfolio-list">
             <li class="section-portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/imgcard1.jpg"
-                  alt="Application for the bank"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imgcard1-1x.jpg 1x,
+                      ./images/imgcard1-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard1-tab-1x.jpg 1x,
+                      ./images/imgcard1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard1-mob-1x.jpg 1x,
+                      ./images/imgcard1-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/imgcard1-1x.jpg"
+                    alt="Application for the bank"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -390,11 +525,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/imgcard2.jpg"
-                  alt="Calculation via the Internet"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imgcard2-1x.jpg 1x,
+                      ./images/imgcard2-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard2-tab-1x.jpg 1x,
+                      ./images/imgcard2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard2-mob-1x.jpg 1x,
+                      ./images/imgcard2-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/imgcard2-1x.jpg"
+                    alt="Calculation via the Internet"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -409,11 +567,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/imgcard3.jpg"
-                  alt="Application for conducting meditation"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imgcard3-1x.jpg 1x,
+                      ./images/imgcard3-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard3-tab-1x.jpg 1x,
+                      ./images/imgcard3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard3-mob-1x.jpg 1x,
+                      ./images/imgcard3-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/imgcard3-1x.jpg"
+                    alt="Application for conducting meditation"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -428,11 +609,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/imgcard4.jpg"
-                  alt="Taxi through the service"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imgcard4-1x.jpg 1x,
+                      ./images/imgcard4-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard4-tab-1x.jpg 1x,
+                      ./images/imgcard4-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard4-mob-1x.jpg 1x,
+                      ./images/imgcard4-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/imgcard4-1x.jpg"
+                    alt="Taxi through the service"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -447,11 +651,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/imgcard5.jpg"
-                  alt="Screen illustrations of devices"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imgcard5-1x.jpg 1x,
+                      ./images/imgcard5-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard5-tab-1x.jpg 1x,
+                      ./images/imgcard5-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard5-mob-1x.jpg 1x,
+                      ./images/imgcard5-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/imgcard5-1x.jpg"
+                    alt="Screen illustrations of devices"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -466,11 +693,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/imgcard6.jpg"
-                  alt="Online training courses"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/imgcard6-1x.jpg 1x,
+                      ./images/imgcard6-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard6-tab-1x.jpg 1x,
+                      ./images/imgcard6-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/imgcard6-mob-1x.jpg 1x,
+                      ./images/imgcard6-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/imgcard6-1x.jpg"
+                    alt="Online training courses"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -490,71 +740,73 @@
 
     <footer class="footer">
       <div class="container container-footer">
-        <div class="footer-logo-text">
-          <a class="footer-logo" href="./index.html"
-            >Web<span class="footer-logo-part">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+        <div class="footer-logo-social-icon">
+          <div class="footer-logo-text">
+            <a class="footer-logo" href="./index.html"
+              >Web<span class="footer-logo-part">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-icon">
+            <p class="footer-social-media-text">Social media</p>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24" class="footer-soc-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social-icon">
-          <p class="footer-social-media-text">Social media</p>
-          <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24" class="footer-soc-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24" class="footer-soc-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link"
-                href="https://wwww.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24" class="footer-soc-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link"
-                href="https://wwww.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24" class="footer-soc-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <div class="footer-subscribe">
           <p class="footer-subscribe-title">Subscribe</p>
+
           <form class="footer-form">
             <label for="user-email" class="footer-label">
               <input
@@ -576,7 +828,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
